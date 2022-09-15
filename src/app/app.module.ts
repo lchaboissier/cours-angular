@@ -13,7 +13,6 @@ import { ContactRoutingModule } from './contact/contact-routing.module';
   ],
   imports: [
     BrowserModule,
-    ContactRoutingModule,
     AppRoutingModule,
     BrowserAnimationsModule,
 

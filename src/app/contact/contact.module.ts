@@ -8,13 +8,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ContactComponent } from './contact.component';
 import { SharedModule } from '../shared/shared.module';
+import { ListContactComponent } from './list-contact/list-contact.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
 @NgModule({
   declarations: [
     ContactComponent,
-    CreateContactComponent
+    CreateContactComponent,
+    ListContactComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +26,8 @@ import { SharedModule } from '../shared/shared.module';
     MatFormFieldModule,
     MatButtonModule,
     ReactiveFormsModule,
-    SharedModule
+    SharedModule,
+    HttpClientModule
   ]
 })
 export class ContactModule { }
