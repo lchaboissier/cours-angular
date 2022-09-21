@@ -22,4 +22,7 @@ export class PromiseService {
       )
     })
   }
+  // public postContact(data : any){
+  //   return this.httpService.post<any>("http://localhost:4200/contact", data);
+  // }
 }

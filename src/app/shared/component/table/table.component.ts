@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { elementAt } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-table',
@@ -15,7 +16,7 @@ export class TableComponent implements OnInit {
 
   public showColumn : any [] = [];
 
-  constructor() { }
+  constructor(public router : Router) { }
 
   ngOnInit(): void {
     this.showColumn = this.displayedColumns.map(element => element['column'])
@@ -25,5 +26,9 @@ export class TableComponent implements OnInit {
 
   public getLine(object:any){
     this.lineObject.emit(object);
+  }
+
+  public navigation(url : string){
+    this.router.navigate(["contact/create"]);
   }
 }

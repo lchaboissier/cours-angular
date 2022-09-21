@@ -5,18 +5,22 @@ import { MatTableModule } from '@angular/material/table';
 import { HttpService } from './http.service';
 import { PromiseService } from './service/promise.service';
 import { ModelContact } from './model/model-contact';
-
+import { MatButtonModule } from '@angular/material/button';
+import { BoldPipe } from './pipe/bold.pipe';
 
 @NgModule({
   declarations: [
-    TableComponent
+    TableComponent,
+    BoldPipe,
   ],
   imports: [
     CommonModule,
-    MatTableModule
+    MatTableModule,
+    MatButtonModule
   ],
   exports: [
-    TableComponent
+    TableComponent,
+    BoldPipe
   ],
   providers: [
     HttpService,

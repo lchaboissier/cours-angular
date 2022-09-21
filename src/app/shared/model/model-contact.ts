@@ -21,9 +21,35 @@ const contact = {
             titre: "Body",
             column: "body",
             value: "body",
+        },   
+    ],
+listContact2 : [
+    {
+            titre: "Nom",
+            column: "nom",
+            value: "nom",
         },
-        
-    ]
+        {
+            titre: "Prénom",
+            column: "prenom",
+            value: "prenom",
+        },
+        {
+            titre: "Adresse",
+            column: "adresse",
+            value: "adresse",
+        },
+        {
+            titre: "Email",
+            column: "email",
+            value: "email",
+        },   
+        {
+            titre: "Tél",
+            column: "tel",
+            value: "tel",
+        },   
+]
 }
 
 export class ModelContact {

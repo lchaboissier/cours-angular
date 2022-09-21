@@ -1,0 +1,12 @@
+<p>print-contact works!</p>
+
+<div>Détail du contact n°{{contact[0]['id']}}</div>
+<div *ngIf="!loading">
+    <mat-list role="list">
+        <mat-list-item>Nom : <span [innerHtml]="contact[0]['nom'] | bold"></span></mat-list-item>
+        <mat-list-item>Prénom : {{contact[0]['prenom']}}</mat-list-item>
+        <mat-list-item>Adresse : {{contact[0]['adresse']}}</mat-list-item>
+        <mat-list-item>Email : {{contact[0]['email']}}</mat-list-item>
+        <mat-list-item>Tél : {{contact[0]['tel']}}</mat-list-item>
+    </mat-list>
+</div>
